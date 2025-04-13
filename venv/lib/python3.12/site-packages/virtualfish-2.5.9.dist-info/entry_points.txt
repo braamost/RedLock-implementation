@@ -1,0 +1,3 @@
+[console_scripts]
+vf=virtualfish.loader.cli:main
+

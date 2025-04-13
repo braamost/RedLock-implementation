@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: virtualfish
+Version: 2.5.9
+Summary: Fish shell tool for managing Python virtual environments
+Home-page: https://github.com/justinmayer/virtualfish
+License: MIT
+Keywords: fish,shell,python,virtual,environments,virtualenv
+Author: Justin Mayer
+Author-email: entroP@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: System :: Shells
+Requires-Dist: packaging (>=21.3)
+Requires-Dist: pkgconfig (>=1.5)
+Requires-Dist: psutil (>=5.7)
+Requires-Dist: virtualenv (>=20)
+Project-URL: Documentation, https://virtualfish.readthedocs.org/
+Project-URL: Repository, https://github.com/justinmayer/virtualfish
+Project-URL: Tracker, https://github.com/justinmayer/virtualfish/issues
+Description-Content-Type: text/markdown
+
+# VirtualFish
+
+[![Build Status](https://img.shields.io/github/actions/workflow/status/justinmayer/virtualfish/main.yml?branch=main)](https://github.com/justinmayer/virtualfish/actions)
+[![PyPI Version](https://img.shields.io/pypi/v/virtualfish)](https://pypi.org/project/virtualfish/)
+[![Downloads](https://img.shields.io/pypi/dm/virtualfish)](https://pypi.org/project/virtualfish/)
+
+VirtualFish is a Python [virtual environment][Virtualenv] manager for the [Fish shell][].
+
+You can get started by [reading the documentation][Read The Docs]. (It’s quite short… Promise!)
+
+You can also get help on [#virtualfish on OFTC](https://webchat.oftc.net/?randomnick=1&channels=virtualfish) (`ircs://irc.oftc.net:6697/#virtualfish`), the same network as the [Fish IRC channel](https://webchat.oftc.net/?randomnick=1&channels=fish).
+
+VirtualFish is maintained by [Justin Mayer](https://justinmayer.com/), and was originally created by [Daisy Leigh Brenecki](https://daisy.wtf).
+
+## A quickstart, for the impatient
+
+👉 **Fish version 3.1 or higher is required.** 👈
+
+1. `python -m pip install virtualfish`
+2. `vf install`
+3. [Add VirtualFish to your prompt](https://virtualfish.readthedocs.org/en/latest/install.html#customizing-your-fish-prompt)
+4. `vf new myvirtualenv; which python`
+
+[Read the documentation][Read The Docs] to find out more about project management, environment variable automation, auto-activation, and other plugins, as well as extending VirtualFish with events, [virtualenvwrapper][] emulation, and more.
+
+
+[Virtualenv]: https://virtualenv.pypa.io/en/latest/
+[Fish shell]: https://fishshell.com/
+[Read The Docs]: https://virtualfish.readthedocs.org/en/latest/
+[virtualenvwrapper]: https://bitbucket.org/virtualenvwrapper/virtualenvwrapper
+
